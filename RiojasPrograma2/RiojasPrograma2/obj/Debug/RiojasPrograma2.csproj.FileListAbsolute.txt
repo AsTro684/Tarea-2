@@ -1,0 +1,11 @@
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\bin\Debug\RiojasPrograma2.exe.config
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\bin\Debug\RiojasPrograma2.exe
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\bin\Debug\RiojasPrograma2.pdb
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.csproj.AssemblyReference.cache
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.Form1.resources
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.Properties.Resources.resources
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.csproj.GenerateResource.cache
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.csproj.CoreCompileInputs.cache
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.exe
+C:\Users\Adolfo Esparza\Desktop\RiojasPrograma2\RiojasPrograma2\obj\Debug\RiojasPrograma2.pdb
