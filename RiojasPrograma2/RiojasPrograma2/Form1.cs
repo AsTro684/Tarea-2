@@ -22,21 +22,40 @@ namespace RiojasPrograma2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("Mostrar todo");
+           
             string id = "id_departamento";
             string nombre = "nombre_departamento";
             int registrosafectados = 0;
             registrosafectados = CargarDatos.EjecturaConsulta(textBox1.Text);
             AccionesComunes.Mensaje("Registros Afectados" + registrosafectados);
-            AccionesComunes.LlenarCombo(textBox1.Text,comboBox1,id,nombre);
-            
-            
+            AccionesComunes.LlenarCombo(textBox1.Text,comboBox1,id,nombre,dgvMostrar);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-         
-            label1.Text = comboBox1.SelectedValue.ToString();
+            if (Properties.Settings.Default.prueba2 == false)
+            {
+                label1.Text = comboBox1.SelectedValue.ToString();
+            }
+            else
+                label1.Text = Properties.Settings.Default.prueba;
+            Properties.Settings.Default.prueba2 = false;
+            
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CargarList_Click(object sender, EventArgs e)
+        {
+            AccionesComunes.LlenarListView(textBox1.Text, listView1);
+        }
+
+        private void CargarData_Click(object sender, EventArgs e)
+        {
+            AccionesComunes.LlenarDataGridView(textBox1.Text, dgvMostrar);
         }
     }
 }

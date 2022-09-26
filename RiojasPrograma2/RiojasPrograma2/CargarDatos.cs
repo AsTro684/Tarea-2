@@ -8,22 +8,23 @@ using System.Data;
 
 namespace RiojasPrograma2
 {
-    
-    
+
+
 
     internal static class CargarDatos
     {
-       static  SqlConnection cnx;
-      static  string cadena = "Server=localhost;Database=Faltas;Trusted_Connection=True;";
-        
-        private static void Conectar() {
+        static SqlConnection cnx;
+        static string cadena = "Server=localhost;Database=Faltas;Trusted_Connection=True;";
+
+        private static void Conectar()
+        {
             cnx = new SqlConnection(cadena);
             cnx.Open();
 
         }
         private static void Desconectar()
         {
-           
+
             cnx.Close();
             cnx = null;
 
@@ -32,21 +33,21 @@ namespace RiojasPrograma2
         {
             int filasAfectadas = 0;
             Conectar();
-            SqlCommand cmd = new SqlCommand(consulta,cnx);  
-            filasAfectadas=cmd.ExecuteNonQuery();
+            SqlCommand cmd = new SqlCommand(consulta, cnx);
+            filasAfectadas = cmd.ExecuteNonQuery();
             Desconectar();
             return filasAfectadas;
         }
-        public static object EjecutarEscalar (string consulta)
-            { 
-           DataTable dt=new DataTable();
+        public static object EjecutarEscalar(string consulta)
+        {
+            DataTable dt = new DataTable();
             Conectar();
-            SqlDataAdapter da = new SqlDataAdapter(consulta,cnx);
+            SqlDataAdapter da = new SqlDataAdapter(consulta, cnx);
             da.Fill(dt);
             Desconectar();
             return dt.NewRow();
-        
-         
+
+
         }
         public static DataTable EjecutarSeleccion(string consulta)
         {
@@ -58,6 +59,7 @@ namespace RiojasPrograma2
             return dt;
 
         }
+        
 
     }
 }
